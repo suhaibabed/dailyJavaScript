@@ -1,0 +1,148 @@
+Data Types in JS 
+
+Data Types => description characters of data.
+
+Data Types divided to two Types
+
+1- primitive data types 
+2- non primitive data types
+
+
+*******Primitive Data Types******
+ 
+ - Number 
+ - String
+ - Boolean
+ - Null 
+ - Undefined
+ - Symbol
+
+
+*******NonPrimitive Data Types******
+
+- Object
+- Array
+
+------------------------------------------------
+Primitive Data type immutable(non-modifiable)
+
+Example 
+
+let word = "JavaScript"
+
+primitive data type compared by its value How??!
+
+example 
+
+let numberOne = 3 ; 
+let numberTwo = 3;
+
+console.log(numberOne == numberTwo); // true 
+
+let js = 'javaScript'
+let py = 'python';
+
+console.log(js == py);
+
+------------------------------------------------
+Non primitive Data Type
+
+non primitive data type are mutable and we are modifiable. after it gets created. 
+
+let nums = [1,2,3]
+console.log(nums)
+nums[0]=456789;   // this is a modification ot the array
+console.log(nums)
+
+let nums = [1,2,3]
+let number = [1,2,3]
+
+console.log(nums == number); //false 
+
+let userOne = {
+    name:"sohib",
+    role:"front end",
+    country:"palestine"
+    }
+
+    let userTwo = {
+        name:"sohib",
+        role:"front end",
+        country:"palestine"
+    }
+
+    console.log(userOne == userTwo); // false
+
+    --------------------------------------------
+
+    ********Number******************************
+
+    let age = '26' // this value consider string why ? because put between two ""
+
+    let age = 26; //this is number 
+
+    const pi = 3.14 this const because this cant change the value.
+
+    console.log(age,age,pi)
+************************************
+Math Object
+
+const PI = Math.PI
+console.log(PI);
+
+**********************String**************
+
+let space = ' '           // an empty space string
+let firstName = 'Asabeneh'
+let lastName = 'Yetayeh'
+let country = 'Finland'
+let city = 'Helsinki'
+let language = 'JavaScript'
+let job = 'teacher'
+let quote = "The saying,'Seeing is Believing' is not correct in 2020."
+let quotWithBackTick = `The saying,'Seeing is Believing' is not correct in 2020.`
+
+
+-------string concatenation----------
+
+let fullName = firstName+space+lastName;
+console.log(fullName);
+
+------template literal's-------
+
+//syntax 
+`string literal text`
+`string literal text ${expression}`
+
+example 
+
+console.log(`The sum of 2 and 3 its 5`)
+
+let a = 2;
+let b = 3;
+
+console.log(`The sum of ${a} and ${b} is a ${a + b}`)
+
+*********string method***********
+
+- length this method return the number of charcter included the space.
+
+example 
+
+let js = 'javascript'
+console.log(js.length)
+let firstName = 'sohib'
+console.log(firstName);
+******************************************
+substr() it take two argumant first the start index, seconde the number of charactet is slice 
+
+
+let string = 'JavaScript'
+console.log(string.substr(4,4))
+
+let string = 'javaScript'
+console.log(string.substring(0,4));
+
+let string = '30 days of javascript'
+console.log(string.split()) // ["30 days of javascript"]
+console.log(string.split(' ')) //["30", "days","of" ,"javascript"];
